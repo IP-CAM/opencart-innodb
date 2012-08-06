@@ -1,3 +1,24 @@
 InnoDB project for OpenCart
 
 ONLY for developers use!
+
+
+Opencart 1.5.4 (Revision 1174) InnoDB Installer
+
+USE:
+Just replace install folder with this one, and install it (in a new database).
+
+
+TODO: 
+
+-add foreign keys to this tables:
+	oc_tax_rate_to_customer_group
+	oc_tax_rule
+	oc_customer_ip_blacklist
+	oc_order_fraud
+	oc_order_voucher
+	oc_customer_group_description
+	oc_order_misc
+	oc_customer_online
+	
+-replace db operations with transactions in opencart

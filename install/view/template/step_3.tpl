@@ -18,15 +18,7 @@
               <?php } ?></td>
           </tr>
           <tr>
-            <td><span class="required">*</span>Database Name:</td>
-            <td><input type="text" name="db_name" value="<?php echo $db_name; ?>" />
-              <br />
-              <?php if ($error_db_name) { ?>
-              <span class="required"><?php echo $error_db_name; ?></span>
-              <?php } ?></td>
-          </tr>
-          <tr>
-            <td><span class="required">*</span>Database User:</td>
+            <td><span class="required">*</span>User:</td>
             <td><input type="text" name="db_user" value="<?php echo $db_user; ?>" />
               <br />
               <?php if ($error_db_user) { ?>
@@ -34,8 +26,16 @@
               <?php } ?></td>
           </tr>
           <tr>
-            <td>Database Password:</td>
+            <td>Password:</td>
             <td><input type="text" name="db_password" value="<?php echo $db_password; ?>" /></td>
+          </tr>
+          <tr>
+            <td><span class="required">*</span>Database Name:</td>
+            <td><input type="text" name="db_name" value="<?php echo $db_name; ?>" />
+              <br />
+              <?php if ($error_db_name) { ?>
+              <span class="required"><?php echo $error_db_name; ?></span>
+              <?php } ?></td>
           </tr>
           <tr>
             <td>Database Prefix:</td>
@@ -61,61 +61,11 @@
               <?php } ?></td>
           </tr>
           <tr>
-            <td><span class="required">*</span>E-mail:</td>
+            <td><span class="required">*</span>E-Mail:</td>
             <td><input type="text" name="email" value="<?php echo $email; ?>" />
               <?php if ($error_email) { ?>
               <span class="required"><?php echo $error_email; ?></span>
               <?php } ?></td>
-          </tr>
-        </table>
-      </div>
-      <p>3. Please enter a store configuration.</p>
-      <div style="background: #F7F7F7; border: 1px solid #DDDDDD; padding: 10px; margin-bottom: 15px;">
-        <table>
-          <tr>
-            <td width="185"><span class="required">*</span>Interface language:</td>
-            <td>
-              <table>
-                <tr>
-                  <td width="100">Language</td><td>By default</td>
-                </tr>
-                <tr>
-                  <td><label><input type="checkbox" name="language[]" value="1" /> Ukrainian</label></td><td align="center"><input type="radio" name="language-default" value="1" /></td>
-                </tr>
-                <tr>
-                  <td><label><input type="checkbox" name="language[]" value="2" /> Russian</label></td><td align="center"><input type="radio" name="language-default" value="2" /></td>
-                </tr>
-                <tr>
-                  <td><label><input type="checkbox" name="language[]" value="3" /> English</label></td><td align="center"><input type="radio" name="language-default" value="3" /></td>
-                </tr>
-              </table>
-              <?php if ($error_) { ?>
-                <span class="required"><?php echo $error_; ?></span>
-              <?php } ?>
-
-            </td>
-          </tr>
-          <tr>
-            <td><span class="required">*</span>Currency:</td>
-            <td>
-              <table>
-                <tr>
-                  <td width="100">Currency</td><td>By default</td>
-                </tr>
-                <tr>
-                  <td><label><input type="checkbox" name="currency[]" value="1" /> UAH</label></td><td align="center"><input type="radio" name="currency-default" value="1" /></td>
-                </tr>
-                <tr>
-                  <td><label><input type="checkbox" name="currency[]" value="2" /> EUR</label></td><td align="center"><input type="radio" name="currency-default" value="2" /></td>
-                </tr>
-                <tr>
-                  <td><label><input type="checkbox" name="currency[]" value="3" /> USD</label></td><td align="center"><input type="radio" name="currency-default" value="3" /></td>
-                </tr>
-              </table>
-              <?php if ($error_) { ?>
-                <span class="required"><?php echo $error_; ?></span>
-              <?php } ?></td>
-            </td>
           </tr>
         </table>
       </div>
